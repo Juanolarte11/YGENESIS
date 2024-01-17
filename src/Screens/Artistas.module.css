@@ -1,0 +1,43 @@
+/* .artistas{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, rgb(37, 37, 37), rgb(161, 87, 230));
+    flex-direction: column;
+}
+
+.title{
+    font-size: 3em;
+    color: aliceblue;
+    font-weight: 400;
+    text-align: center;
+} */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(37, 37, 37), rgb(161, 87, 230));
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.title {
+    font-size: 3em;
+    color: aliceblue;
+    font-weight: 400;
+    text-align: center;
+}
+
+.flechaLogo {
+    color: aliceblue;
+    cursor: pointer;
+}

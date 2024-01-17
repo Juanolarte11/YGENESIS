@@ -1,0 +1,22 @@
+.artista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagenArtista{
+    width: 100%;
+    height: 500px;
+}
+
+.artista h3{
+    color: aliceblue;
+}
+
+.artista p{
+    color: aliceblue;
+}

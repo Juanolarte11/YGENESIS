@@ -1,0 +1,66 @@
+.acerca {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgb(161, 87, 230),  rgb(37, 37, 37));
+}
+
+.acercaContainer {
+    border: solid 1.5px;
+    padding: 50px;
+    margin: 180px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgb(188, 143, 231),  rgb(68, 65, 65));
+}
+
+.textoPrincipal {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sliderBox {
+    width: 100%;
+    max-width: 800px;
+}
+
+.imgCarrusel {
+    width: 300px;
+    height: 150px;
+}
+
+.textoCarrusel {
+    color: transparent;
+}
+.tituloCarrusel{
+    color: transparent;
+}
+
+.title {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+@media (min-width : 800px) {
+    .imgCarrusel {
+        width: 100%;
+        height: auto;
+    }
+    .textoCarrusel {
+        font-size: 20px;
+        color: rgb(187, 117, 252);
+    }
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(253, 253, 253);
+    }
+    .tituloCarrusel {
+        color: rgb(224, 192, 255);
+        font-weight: 500;
+    }
+}
