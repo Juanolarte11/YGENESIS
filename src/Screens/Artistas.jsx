@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-import styles from './Artistas.module.css'
-import Artista from '../Components/Artista'
-import { artistas } from '../assets/artistas'
-import { FaArrowCircleRight } from "react-icons/fa";
-import { FaArrowCircleLeft } from "react-icons/fa";
-
+import React, { useState, useEffect } from 'react';
+import styles from './Artistas.module.css';
+import Artista from '../Components/Artista';
+import { artistas } from '../assets/artistas';
+import { FaArrowCircleRight, FaArrowCircleLeft } from 'react-icons/fa';
 
 const Artistas = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,18 +17,26 @@ const Artistas = () => {
         );
     };
 
+    useEffect(() => {
+        // Configura el cambio automático cada 5 segundos (5000 milisegundos)
+        const intervalId = setInterval(() => {
+            handleNext();
+        }, 4000);
+
+        // Limpia el intervalo al desmontar el componente
+        return () => clearInterval(intervalId);
+    }, [currentIndex]);
+
     return (
         <div name="Artistas" className={styles.carousel}>
             <h2 className={styles.title}>Artistas que manejo</h2>
             <div className={styles.carouselContainer}>
-                {/* <button onClick={handlePrev}>Anterior</button> */}
-                <FaArrowCircleLeft onClick={handlePrev} size={100}className={styles.flechaLogo}/>
-                <Artista artista={artistas[currentIndex]} />
-                <FaArrowCircleRight onClick={handleNext} size={100}className={styles.flechaLogo}/>
-                {/* <button onClick={handleNext}>Siguiente</button> */}
+                <FaArrowCircleLeft onClick={handlePrev} size={100} className={styles.flechaLogo} />
+                <Artista artista={artistas[currentIndex]}/>
+                <FaArrowCircleRight onClick={handleNext} size={100} className={styles.flechaLogo} />
             </div>
         </div>
     );
-}
+};
 
-export default Artistas
+export default Artistas;
