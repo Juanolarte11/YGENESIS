@@ -20,17 +20,17 @@ const Conctact = () => {
                         <div>
                             <h3>Company</h3>
                             <ul>
-                                <li><a><Link to='Home'>Home</Link></a></li>
-                                <li><a><Link to='AcercaDeMi'>About</Link></a></li>
-                                <li><a><Link to='Artistas'>Artistas</Link></a></li>
+                                <li><Link to='Home' className={styles.A}>Home</Link></li>
+                                <li><Link to='AcercaDeMi' className={styles.A}>About</Link></li>
+                                <li><Link to='Artistas' className={styles.A}>Artistas</Link></li>
                             </ul>
                         </div>
                         <div>
                             <h3>Redes Sociales</h3>
                             <ul>
-                                <li><a><img className={styles.imagenSimbolo} src={require("../assets/instagram.png")} alt="Simbolo Instagram" /></a></li>
-                                <li><a><img className={styles.imagenSimbolo} src={require("../assets/facebook.png")} alt="Simbolo Facebook" /></a></li>
-                                <li><a><img className={styles.imagenSimbolo} src={require("../assets/whatsapp.png")} alt="Simbolo Whatsapp" /></a></li>
+                                <li><a href='https://www.instagram.com/'><img className={styles.imagenSimbolo} src={require("../assets/instagram.png")} alt="Simbolo Instagram" /></a></li>
+                                <li><a href='https://www.facebook.com/?locale=es_LA'><img className={styles.imagenSimbolo} src={require("../assets/facebook.png")} alt="Simbolo Facebook" /></a></li>
+                                <li><a href='https://www.youtube.com/'><img className={styles.imagenSimbolo} src={require("../assets/whatsapp.png")} alt="Simbolo Whatsapp" /></a></li>
                             </ul>
                         </div>
 

@@ -13,6 +13,7 @@ footer{
 
 input,
 a,
+.A,
 button,
 li {
     all: unset;
@@ -20,6 +21,7 @@ li {
 }
 
 a,
+.A,
 button{
     cursor: pointer;
 }
