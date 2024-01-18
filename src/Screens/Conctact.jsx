@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Contact.module.css'
+import { Link } from 'react-scroll';
 
 const Conctact = () => {
     return (
@@ -19,17 +20,17 @@ const Conctact = () => {
                         <div>
                             <h3>Company</h3>
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a><Link to='Home'>Home</Link></a></li>
+                                <li><a><Link to='AcercaDeMi'>About</Link></a></li>
+                                <li><a><Link to='Artistas'>Artistas</Link></a></li>
                             </ul>
                         </div>
                         <div>
                             <h3>Redes Sociales</h3>
                             <ul>
-                                <li><a href="#"><img className={styles.imagenSimbolo} src={require("../assets/instagram.png")} alt="Simbolo Instagram" /></a></li>
-                                <li><a href="#"><img className={styles.imagenSimbolo} src={require("../assets/facebook.png")} alt="Simbolo Facebook" /></a></li>
-                                <li><a href="#"><img className={styles.imagenSimbolo} src={require("../assets/whatsapp.png")} alt="Simbolo Whatsapp" /></a></li>
+                                <li><a><img className={styles.imagenSimbolo} src={require("../assets/instagram.png")} alt="Simbolo Instagram" /></a></li>
+                                <li><a><img className={styles.imagenSimbolo} src={require("../assets/facebook.png")} alt="Simbolo Facebook" /></a></li>
+                                <li><a><img className={styles.imagenSimbolo} src={require("../assets/whatsapp.png")} alt="Simbolo Whatsapp" /></a></li>
                             </ul>
                         </div>
 
