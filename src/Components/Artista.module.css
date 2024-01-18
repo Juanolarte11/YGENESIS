@@ -1,4 +1,4 @@
-.artista{
+/* .artista{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,4 +19,40 @@
 
 .artista p{
     color: aliceblue;
+} */
+
+/* Estilos base para dispositivos más grandes */
+.artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagenArtista {
+    width: 100%;
+    max-width: 500px;
+    /* Ajusta el máximo ancho de la imagen según tus necesidades */
+    height: auto;
+    /* Permite que la altura se ajuste proporcionalmente al ancho */
+}
+
+.artista h3,
+.artista p {
+    color: aliceblue;
+}
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .artista {
+        margin: 20px;
+    }
+
+    .imagenArtista {
+        max-width: 100%;
+        /* Ocupa el ancho completo del contenedor en dispositivos pequeños */
+    }
 }
