@@ -29,7 +29,7 @@ const Artistas = () => {
 
     return (
         <div name="Artistas" className={styles.carousel}>
-            <h2 className={styles.title}>Artistas que manejo</h2>
+            <h2 className={styles.title}>Artistas que se manejan</h2>
             <div className={styles.carouselContainer}>
                 <FaArrowCircleLeft onClick={handlePrev} size={100} className={styles.flechaLogo} />
                 <Artista artista={artistas[currentIndex]}/>

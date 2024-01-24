@@ -61,7 +61,7 @@
         justify-content: space-evenly;
         height: 60px;
         background-color: rgb(77, 52, 100);
-        width: 100%;
+        width: auto;
     }
 }
 
