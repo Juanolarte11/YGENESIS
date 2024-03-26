@@ -66,7 +66,7 @@ import styles from "./Contact.module.css"
 
 const Contact = () => {
     return (
-        <div className={styles.contactPageWrapper}>
+        <div className={styles.contactPageWrapper} name='Contact'>
             <h1 className={styles.primaryHeading}>Have Question In Mind?</h1>
             <h1 className={styles.primaryHeading}>Let Us Help You</h1>
             <div className={styles.contactFormContainer}>

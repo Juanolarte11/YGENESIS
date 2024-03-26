@@ -4,8 +4,7 @@ import Artistas from "./Screens/Artistas";
 import Conctact from "./Screens/Conctact";
 import Footer from "./Screens/Footer";
 import Home from "./Screens/Home";
-
-
+import Testimonios from "./Screens/Testimonios";
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
       <Home/>
       <AcercaYo/>
       <Artistas/>
+      <Testimonios/>
       <Conctact/>
       <Footer/>
     </div>
